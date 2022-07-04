@@ -22,5 +22,9 @@
   "homepage": "https://github.com/cokuevn/frontend-project-lvl1#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "prettier": "^2.7.1"
   }
 }
