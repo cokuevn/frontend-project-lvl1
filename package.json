@@ -4,7 +4,10 @@
   "version": "1.0.0",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-progresstion": "bin/brain-progresstion.js"
   },
   "description": "[![Actions Status](https://github.com/cokuevn/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/cokuevn/frontend-project-lvl1/actions)",
   "main": "index.js",
@@ -26,6 +29,7 @@
   },
   "devDependencies": {
     "eslint": "^8.19.0",
+    "eslint-plugin-import": "^2.26.0",
     "prettier": "^2.7.1"
   }
 }

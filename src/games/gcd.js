@@ -1,19 +1,24 @@
 import readlineSync from 'readline-sync';
+import { getRandomInt } from '../getRandomNum.js';
 
-const number = () => Math.floor(Math.random() * 100);
+const descriptionGame = 'Find the greatest common divisor of given numbers.';
 
-const isEven = (n) => n % 2 === 0;
+const calculateGcd = (num1, num2) => (num2 === 0 ? num1 : calculateGcd(num2, num1 % num2));
 
-export const evenGame = () => {
+export const gcdGame = () => {
+  console.log('Welcome to the Brain Games!');
   const showName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${showName}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+  console.log(descriptionGame);
 
   const roundsCount = 3;
   for (let i = 0; i !== roundsCount; i += 1) {
-    const num = number();
-    const correctAnswer = isEven(num) ? 'yes' : 'no';
-    console.log(`Question: ${num}`);
+    const num1 = getRandomInt();
+    const num2 = getRandomInt();
+    const correctAnswer = `${calculateGcd(num1, num2)}`;
+    const question = `${num1} ${num2}`;
+
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer !== correctAnswer) {
