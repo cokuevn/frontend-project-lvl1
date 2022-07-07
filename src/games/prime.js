@@ -1,21 +1,33 @@
 import readlineSync from 'readline-sync';
 import { getRandomInt } from '../getRandomNum.js';
 
-const isEven = (n) => n % 2 === 0;
+const descriptionGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const descriptionGame = 'Answer "yes" if the number is even, otherwise answer "no".';
+const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
 
-export const evenGame = () => {
+  for (let i = 2; i <= number / 2; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+export const primeGame = () => {
+  console.log('Welcome to the Brain Games!');
   const showName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${showName}!`);
   console.log(descriptionGame);
 
   const roundsCount = 3;
-
   for (let i = 0; i !== roundsCount; i += 1) {
-    const num = getRandomInt();
-    const correctAnswer = isEven(num) ? 'yes' : 'no';
-    console.log(`Question: ${num}`);
+    const question = getRandomInt();
+    const correctAnswer = isPrime(question) ? 'yes' : 'no';
+
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
     if (userAnswer !== correctAnswer) {
