@@ -18,10 +18,10 @@ const calculate = (a, b, operator) => {
 };
 
 const getCresteTask = () => {
-  const num1 = getRandomInt();
-  const num2 = getRandomInt();
+  const num1 = getRandomInt(1, 10);
+  const num2 = getRandomInt(1, 10);
   const operator = operators[getRandomInt(0, operators.length - 1)];
-  const correctAnswer = `${calculate(num1, num2, operator)}`;
+  const correctAnswer = calculate(num1, num2, operator);
   const question = `${num1} ${operator} ${num2}`;
   return [question, correctAnswer];
 };
