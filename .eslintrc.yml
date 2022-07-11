@@ -1,9 +1,11 @@
 env:
   node: true
-
+  es2021: true
 
 extends:
-  - "airbnb-base"
+  - eslint:recommended
+  - plugin:import/recommended
+  - airbnb
 parserOptions:
   ecmaVersion: latest
 
@@ -15,4 +17,3 @@ rules:
     - js: always
 
   "import/prefer-default-export": "off"
- 

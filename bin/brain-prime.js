@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import { start } from '../src/games/prime.js';
+// eslint-disable-next-line import/no-named-as-default
+import start from '../src/games/prime.js';
 
 start();

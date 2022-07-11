@@ -23,4 +23,6 @@ const getCresteTask = () => {
   return [question, correctAnswer];
 };
 
-export const start = () => gameRun(descriptionGame, getCresteTask);
+const start = () => gameRun(descriptionGame, getCresteTask);
+
+export default start;
