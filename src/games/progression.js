@@ -3,6 +3,7 @@ import { getRandomInt } from '../getRandomNum.js';
 
 const descriptionGame = 'What number is missing in the progression?';
 const progressionLength = 10;
+
 const getProgression = (start, diff, length) => {
   let progression = [];
   for (let i = 0; i < length; i += 1) {
