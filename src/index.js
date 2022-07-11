@@ -2,11 +2,11 @@ import readlineSync from 'readline-sync';
 
 const numOfRounds = 3;
 
-const gameRun = (getCresteTask, description) => {
+const gameRun = (descriptionGame, getCresteTask) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log(description);
+  console.log(descriptionGame);
   for (let i = 0; i < numOfRounds; i += 1) {
     const [question, correctAnswer] = getCresteTask();
     console.log(`Question: ${question}`);
@@ -19,7 +19,7 @@ const gameRun = (getCresteTask, description) => {
       return;
     }
   }
-  console.log(`Congratualtions ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default gameRun;

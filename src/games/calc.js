@@ -26,4 +26,4 @@ const getCresteTask = () => {
   return [question, correctAnswer];
 };
 
-export const start = () => gameRun(getCresteTask, descriptionGame);
+export const start = () => gameRun(descriptionGame, getCresteTask);
