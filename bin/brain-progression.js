@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import start from '../src/games/progression.js';
+import startProgressionGame from '../src/games/progression.js';
 
-start();
+startProgressionGame();

@@ -1,5 +1,5 @@
 import gameRun from '../index.js';
-import { getRandomInt } from '../getRandomNum.js';
+import getRandomInt from '../getRandomNum.js';
 
 const descriptionGame = 'What number is missing in the progression?';
 const progressionLength = 10;
@@ -12,7 +12,7 @@ const getProgression = (start, diff, length) => {
   return progression;
 };
 
-const getCresteTask = () => {
+const getTaskData = () => {
   const start = getRandomInt();
   const diff = getRandomInt(1, 9);
   const secretNum = getRandomInt(0, progressionLength);
@@ -22,6 +22,6 @@ const getCresteTask = () => {
   return [question, correctAnswer];
 };
 
-const start = () => gameRun(descriptionGame, getCresteTask);
+const startProgressionGame = () => gameRun(descriptionGame, getTaskData);
 
-export default start;
+export default startProgressionGame;

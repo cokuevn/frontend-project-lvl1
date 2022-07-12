@@ -1,5 +1,5 @@
 import gameRun from '../index.js';
-import { getRandomInt } from '../getRandomNum.js';
+import getRandomInt from '../getRandomNum.js';
 
 const descriptionGame = 'What is the result of the expression?';
 
@@ -7,14 +7,18 @@ const operators = '+-*';
 
 const calculateExpression = (x, y, operator) => {
   switch (operator) {
-    case '*': return x * y;
-    case '+': return x + y;
-    case '-': return x - y;
-    default: return null;
+    case '*':
+      return x * y;
+    case '+':
+      return x + y;
+    case '-':
+      return x - y;
+    default:
+      return null;
   }
 };
 
-const getCresteTask = () => {
+const getTaskData = () => {
   const num1 = getRandomInt(1, 50);
   const num2 = getRandomInt(1, 50);
   const operation = operators.charAt(getRandomInt(0, operators.length - 1));
@@ -23,6 +27,6 @@ const getCresteTask = () => {
   return [question, correctAnswer];
 };
 
-const start = () => gameRun(descriptionGame, getCresteTask);
+const startCalcGame = () => gameRun(descriptionGame, getTaskData);
 
-export default start;
+export default startCalcGame;
