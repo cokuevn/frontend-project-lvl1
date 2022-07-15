@@ -7,12 +7,12 @@ const maxNumber = 100;
 
 const descriptionGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const getTaskData = () => {
+const getRoundData = () => {
   const question = getRandomInt(0, maxNumber);
   const correctAnswer = isEven(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-const startEvenGame = () => gameRun(descriptionGame, getTaskData);
+const startEvenGame = () => gameRun(descriptionGame, getRoundData);
 
 export default startEvenGame;

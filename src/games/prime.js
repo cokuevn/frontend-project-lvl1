@@ -15,12 +15,12 @@ const isPrime = (number) => {
   return true;
 };
 
-const getTaskData = () => {
+const getRoundData = () => {
   const question = getRandomInt(1, maxNumber);
   const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-const startPrimeGame = () => gameRun(descriptionGame, getTaskData);
+const startPrimeGame = () => gameRun(descriptionGame, getRoundData);
 
 export default startPrimeGame;

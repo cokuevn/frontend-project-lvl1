@@ -14,7 +14,7 @@ const getProgression = (start, diff, length) => {
   return progression;
 };
 
-const getTaskData = () => {
+const getRoundData = () => {
   const start = getRandomInt(1, maxNumber);
   const diff = getRandomInt(1, maxNumber);
   const secretNum = getRandomInt(0, lengthOfProgression - 1);
@@ -25,6 +25,6 @@ const getTaskData = () => {
   return [question, correctAnswer];
 };
 
-const startProgressionGame = () => gameRun(descriptionGame, getTaskData);
+const startProgressionGame = () => gameRun(descriptionGame, getRoundData);
 
 export default startProgressionGame;
