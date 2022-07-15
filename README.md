@@ -16,16 +16,16 @@
 - Выполнить npm link
 
 ### Установка
-  `$ make install`
-  `$ make publish`
-  `$ npm link`
+  - `$ make install`
+  - `$ make publish`
+  - `$ npm link`
 
-Запуск игр
-`$ brain-even`
-`$ brain-calc`
-`$ brain-gcd`
-`$ brain-progression`
-`$ brain-prime`
+### Запуск игр
+- `$ brain-even`
+- `$ brain-calc`
+- `$ brain-gcd`
+- `$ brain-progression`
+- `$ brain-prime`
 
 ### Игры:
 
