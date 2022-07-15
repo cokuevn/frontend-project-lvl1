@@ -16,7 +16,7 @@ const calculateExpression = (x, y, operator) => {
     case '-':
       return x - y;
     default:
-      throw new Error('error');
+      throw new Error(`Unknown operator: ${operator}`);
   }
 };
 
