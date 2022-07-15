@@ -3,23 +3,26 @@ import getRandomInt from '../getRandomNum.js';
 
 const descriptionGame = 'What number is missing in the progression?';
 const lengthOfProgression = 10;
+const maxNumber = 10;
 
-const getProgression = (start, diff, length, ind) => {
-  const filledArray = Array.apply(0, Array(length)).map(() => (start));
-  const arrayWithProgression = filledArray.map((el, index) => {
-    const result = el + diff * index;
-    return index === ind ? '..' : result;
-  }, 1);
-  return arrayWithProgression.join(' ');
+const getProgression = (start, diff, length) => {
+  let progression = [];
+  for (let i = 0; i < length; i += 1) {
+    progression = [...progression, start + diff * i];
+  }
+
+  return progression;
 };
 
 const getTaskData = () => {
-  const start = getRandomInt();
-  const diff = getRandomInt(1, 10);
-  const indexOfHiddenValue = getRandomInt(0, lengthOfProgression - 1);
-  const question = getProgression(start, diff, lengthOfProgression, indexOfHiddenValue);
-  const answer = `${start + diff * indexOfHiddenValue}`;
-  return [question, answer];
+  const start = getRandomInt(1, maxNumber);
+  const diff = getRandomInt(1, maxNumber);
+  const secretNum = getRandomInt(0, lengthOfProgression - 1);
+  const progression = getProgression(start, diff, lengthOfProgression);
+  const correctAnswer = `${progression.splice(secretNum, 1, '..')}`;
+  const question = `${progression.join(' ')}`;
+
+  return [question, correctAnswer];
 };
 
 const startProgressionGame = () => gameRun(descriptionGame, getTaskData);

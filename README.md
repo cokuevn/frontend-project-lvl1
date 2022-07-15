@@ -6,6 +6,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/62e7f26a5f0b0c10f30e/maintainability)](https://codeclimate.com/github/cokuevn/frontend-project-lvl1/maintainability)
 
+
+
 ### Учебный репозиторий. Содержит 5 игр. Для установки нужен node.js минимум 13 версии Установка:
 
 - Склонировать проект
@@ -13,17 +15,39 @@
 - Выполнить make publish
 - Выполнить npm link
 
+### Установка
+  `$ make install`
+  `$ make publish`
+  `$ npm link`
+
+Запуск игр
+`$ brain-even`
+`$ brain-calc`
+`$ brain-gcd`
+`$ brain-progression`
+`$ brain-prime`
+
 ### Игры:
 
 - Brain Even - надо ответить четное число или нет. Для запуска выполните brain-even
+ 
+ `$ brain-even`
 
 - Brain Calc - надо вычислить результат математического выражения. Для запуска выполните brain-calc
 
+ `$ brain-calc`
+
 - Brain Gcd - надо вычислить общий делитель у двух чисел. Для запуска выполните brain-gcd
+
+`$ brain-gcd`
 
 - Brain Progression - надо найти недостающий элемент прогрессии. Для запуска выполните brain-progression
 
+`$ brain-progression`
+
 - Brain Prime - надо ответить является-ли число простым. Для запуска выполните brain-prime.
+
+`$ brain-prime`
 
 ### Video Even-game:
 

@@ -5,6 +5,8 @@ const descriptionGame = 'What is the result of the expression?';
 
 const operators = '+-*';
 
+const maxNumber = 50;
+
 const calculateExpression = (x, y, operator) => {
   switch (operator) {
     case '*':
@@ -14,19 +16,19 @@ const calculateExpression = (x, y, operator) => {
     case '-':
       return x - y;
     default:
-      return null;
+      throw new Error('error');
   }
 };
 
-const getTaskData = () => {
-  const num1 = getRandomInt(1, 50);
-  const num2 = getRandomInt(1, 50);
+const getRoundData = () => {
+  const num1 = getRandomInt(1, maxNumber);
+  const num2 = getRandomInt(1, maxNumber);
   const operation = operators.charAt(getRandomInt(0, operators.length - 1));
   const correctAnswer = String(calculateExpression(num1, num2, operation));
   const question = `${num1} ${operation} ${num2}`;
   return [question, correctAnswer];
 };
 
-const startCalcGame = () => gameRun(descriptionGame, getTaskData);
+const startCalcGame = () => gameRun(descriptionGame, getRoundData);
 
 export default startCalcGame;
