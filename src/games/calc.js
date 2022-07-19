@@ -5,7 +5,7 @@ const descriptionGame = 'What is the result of the expression?';
 
 const operators = '+-*';
 
-const maxNumber = 50;
+const maxNumber = 10;
 
 const calculateExpression = (x, y, operator) => {
   switch (operator) {

@@ -56,20 +56,20 @@
 
 ### Video Even-game:
 
-https://asciinema.org/a/z8MM5bOAbnKgcGfoaQNTxEKXz
+https://asciinema.org/a/37CGuIQ8uFWf0wyuj2QiHNCmm
 
 ### Video Calc-game:
 
-https://asciinema.org/connect/0a911d27-c352-4445-95f3-964f743dcbf4
+https://asciinema.org/a/3KCAp4KaT25HTMlL3BA0KuA3V
 
 ### Video Gcd-game:
 
-https://asciinema.org/connect/0a911d27-c352-4445-95f3-964f743dcbf4
+https://asciinema.org/a/gUGkuTfdmcbxETZGKYKqY827f
 
 ### Video Progression-game:
 
-https://asciinema.org/connect/0a911d27-c352-4445-95f3-964f743dcbf4
+https://asciinema.org/a/oirzE2YrZd6p3mlZihHIyKUrJ
 
 ### Video Prime-game:
 
-https://asciinema.org/connect/0a911d27-c352-4445-95f3-964f743dcbf4
+https://asciinema.org/a/BY0inBXfdQJ3xSYDrsf5MzW8C
