@@ -56,15 +56,15 @@
 
 ### Video Even-game:
 
-https://asciinema.org/a/37CGuIQ8uFWf0wyuj2QiHNCmm
+https://asciinema.org/a/sPkvglc3ZKR2LQdmNmVziAPRU
 
 ### Video Calc-game:
 
-https://asciinema.org/a/3KCAp4KaT25HTMlL3BA0KuA3V
+https://asciinema.org/a/5GUslXEvkP6WfdjcSJFB4e5N1
 
 ### Video Gcd-game:
 
-https://asciinema.org/a/gUGkuTfdmcbxETZGKYKqY827f
+https://asciinema.org/a/4uorumk0PLjYCq6P6ZWfctIpM
 
 ### Video Progression-game:
 
